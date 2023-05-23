@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Manrope&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="Logo de Alura" class="logo">
+    </header>
+    <main>
+        <!--Esta sección corresponde a la parte izquierda del encriptador-->
+        <section>
+            <div>
+                <textarea class="ingresar-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div>
+                <h1 id="aviso">Solo letras minúsculas y sin acentos</h1>
+            </div>
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <!--Esta sección corresponde a la parte derecha del encriptador-->
+        <section>
+            <div>
+                <textarea class="mensaje" id="copiar-texto" cols="24" rows="13"></textarea>
+            </div>
+            <div>
+                <button class="btn-copiar" id="boton-copiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+       
+    </main>
+    <footer>
+        <p>Luciana Romina Schmidt</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
